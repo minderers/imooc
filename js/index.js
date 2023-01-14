@@ -167,19 +167,19 @@ setInterval(() => {
 // 倒计时
 {
     // 获取结束时间点的时间戳
-    let endDate = new Date('2023-1-14 11:20:30');
+    let endDate = new Date('2023-01-15 17:05:22');
     endDate = parseInt(endDate.getTime() / 1000);
     console.log(endDate);
 
     let timer = null;
 
-    // 获取页面的小时，分，秒标签
+    // 获取页面的时、分、秒标签
     const hourDom = document.getElementById('hour');
     const minDom = document.getElementById('min');
     const secDom = document.getElementById('sec');
 
     function coundDown() {
-        // 获取此刻的时间的时间戳
+        // 获取此刻当前时间的时间戳
         let nowDate = new Date();
         nowDate = parseInt(nowDate.getTime() / 1000);
 
@@ -209,6 +209,7 @@ setInterval(() => {
             secDom.innerText = '00';
         }
     }
+
     coundDown();
 
     // 启动定时器
@@ -217,3 +218,27 @@ setInterval(() => {
     }, 1000);
 }
 
+//滚动课程{
+{
+    const ul = document.querySelector('.sk-list ul');
+
+    let timer = null;
+
+    let leftPx = 0;
+
+    timer = setInterval(() => {
+        leftPx = --leftPx == -1920 ? 0 : leftPx;
+        ul.style.left = leftPx + 'px';
+    }, 10);
+
+    ul.onmouseenter = function () {
+        clearInterval(timer);
+    }
+
+    ul.onmouseleave = function () {
+        timer = setInterval(() => {
+            leftPx = --leftPx == -1920 ? 0 : leftPx;
+            ul.style.left = leftPx + 'pX';
+        }, 10);
+    }
+}
