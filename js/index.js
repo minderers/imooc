@@ -282,3 +282,23 @@ for (let i = 0; i < tabss.length; i++) {
         ulss[i].className = 'current';
     }
 }
+
+// 课程切换
+// 获取所有的a标签（ tab 栏)
+const tabsss = document.querySelectorAll('.study-way-box a');
+// 获取到所有的课程列表
+const ulsss = document.querySelectorAll('.study-way-list ul');
+
+for (let i = 0; i < tabsss.length; i++) {
+    // 循环为所有的a绑定点击事件
+    tabsss[i].onclick = function () {
+        //清除所有的a 和ul的样式
+        for (let j = 0; j < tabsss.length; j++) {
+            tabsss[j].className = '';
+            ulsss[j].className = '';
+        }
+        //给当前选中的a和ul 添加样式
+        tabsss[i].className = 'active';
+        ulsss[i].className = 'current';
+    }
+}
