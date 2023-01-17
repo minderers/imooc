@@ -262,3 +262,23 @@ for (let i = 0; i < tabs.length; i++) {
         uls[i].className = 'current';
     }
 }
+
+// 课程切换
+// 获取所有的a标签（ tab 栏)
+const tabss = document.querySelectorAll('.ms-box a');
+// 获取到所有的课程列表
+const ulss = document.querySelectorAll('.ms-list ul');
+
+for (let i = 0; i < tabss.length; i++) {
+    // 循环为所有的a绑定点击事件
+    tabss[i].onclick = function () {
+        //清除所有的a 和ul的样式
+        for (let j = 0; j < tabss.length; j++) {
+            tabss[j].className = '';
+            ulss[j].className = '';
+        }
+        //给当前选中的a和ul 添加样式
+        tabss[i].className = 'active';
+        ulss[i].className = 'current';
+    }
+}

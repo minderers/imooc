@@ -136,6 +136,17 @@
     font-size: 12px;
 }
 
+.icon1 {
+    background: url(https://static.mukewang.com/static/img/common/course-card/icon-new.png?v=2) no-repeat center/100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 25px;
+    z-index: 1;
+}
+
 /* 课程列表结束 */
 
 #menu {
