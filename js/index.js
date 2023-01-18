@@ -22,24 +22,24 @@ setInterval(() => {
     // 定义轮播图数组
     const swiperImgList = [
         {
-            path: '../images/swiper/swiper-1.jpg',
+            path: './images/swiper/swiper-1.jpg',
             url: 'https://www.imooc.com/',
-            bg: '../images/ swiper/bj-1.jpg'
+            bg: './images/swiper/bj-1.jpg'
         },
         {
-            path: '../images/swiper/swiper-2.jpg',
+            path: './images/swiper/swiper-2.jpg',
             url: 'https://www.imooc.com/',
-            bg: '../images/swiper/bj-2.jpg'
+            bg: './images/swiper/bj-2.jpg'
         },
         {
-            path: '../images/swiper/swiper-3.jpg',
+            path: './images/swiper/swiper-3.jpg',
             url: 'https://www.imooc.com/',
-            bg: '../images/swiper/bj-3.jpg'
+            bg: './images/swiper/bj-3.jpg'
         },
         {
-            path: '../images/swiper/swiper-4.jpg',
+            path: './images/swiper/swiper-4.jpg',
             url: 'https://www.imooc.com/',
-            bg: '../images/swiper/bj-4.jpg'
+            bg: './images/swiper/bj-4.jpg'
         }
     ];
 
