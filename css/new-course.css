@@ -139,7 +139,7 @@
 }
 
 .icon1 {
-    background: url(https://static.mukewang.com/static/img/common/course-card/icon-new.png?v=2) no-repeat center/100%;
+    background: url(../images/new-pic/icon1.png) no-repeat center/100%;
     content: "";
     position: absolute;
     top: 0;
