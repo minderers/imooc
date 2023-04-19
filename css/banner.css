@@ -194,3 +194,65 @@
     transform: rotate(30deg);
     opacity: .5;
 }
+
+.banner-container {
+    height: 220px;
+    width: 100%;
+    background-image: url(../images/tixi/banner3.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.banner-container .wrap {
+    width: 1152px;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 75px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.banner-container .wrap .logo-class {
+    width: 126px;
+    height: 46px;
+    background-image: url(../images/tixi/logo-class.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 24px;
+}
+
+.banner-container .wrap .top-desc {
+    height: 12px;
+    position: absolute;
+    left: 134px;
+    top: 46px;
+    font-size: 12px;
+    color: #545c63;
+    letter-spacing: 1px;
+    line-height: 12px;
+}
+
+.banner-container .wrap h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #545c63;
+    letter-spacing: 4.69px;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.banner-container .wrap .desc {
+    display: inline-block;
+    font-size: 19px;
+    color: #545c63;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 300;
+}
